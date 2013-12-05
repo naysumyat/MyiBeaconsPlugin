@@ -23,7 +23,7 @@ public class iBeaconsPlugin extends CordovaPlugin implements IBeaconManager {
             throws JSONException {
         try {
             if (action.equalsIgnoreCase(ACTION_VERIFY_BT)) {
-                verifyBluetooth(); // Comment
+                verifyBluetooth();
                 callbackContext.success();
                 return true;
             }
