@@ -3,7 +3,7 @@ var iBeacon = {
         cordova.exec(
             successCallback,
             errorCallback,
-            'iBeacon',
+            'IBeaconsPlugins',
             'verifyBluetooth',
             [{
                 
