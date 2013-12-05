@@ -15,11 +15,11 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="iBeaconsPlugin">
-                <param name="android-package" value="me.habel.iBeaconPlugin.iBeaconsPlugin"/>
+            <feature name="IBeaconsPlugins">
+                <param name="android-package" value="me.habel.iBeaconPlugin.IBeaconsPlugins"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/iBeaconsPlugin.java" target-dir="src/me/habel/iBeaconPlugin"/>      
+        <source-file src="src/android/IBeaconsPlugins.java" target-dir="src/me/habel/IBeaconsPlugins"/>      
      </platform>          
 </plugin>

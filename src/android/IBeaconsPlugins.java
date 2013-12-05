@@ -12,7 +12,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class iBeaconsPlugin extends CordovaPlugin implements IBeaconManager {
+public class IBeaconsPlugins extends CordovaPlugin implements IBeaconManager {
     private static String DEBUG_TAG = "iBeacon :: DEBUG => ";
     public static final String ACTION_VERIFY_BT = "verifyBluetooth";
     private IBeaconManager iBeaconManager = IBeaconManager
