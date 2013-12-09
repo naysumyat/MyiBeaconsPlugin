@@ -7,12 +7,12 @@ import android.content.ServiceConnection;
 import com.radiusnetworks.ibeacon.IBeaconConsumer;
 import com.radiusnetworks.ibeacon.IBeaconManager;
 
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.*;
+import org.apache.cordova.api.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class IBeaconsPlugins extends CordovaPlugin implements IBeaconManager {
+public class IBeaconsPlugins extends CordovaPlugin implements IBeaconConsumer {
     private static String DEBUG_TAG = "iBeacon :: DEBUG => ";
     public static final String ACTION_VERIFY_BT = "verifyBluetooth";
     private IBeaconManager iBeaconManager = IBeaconManager

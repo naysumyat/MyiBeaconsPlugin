@@ -20,6 +20,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/IBeaconsPlugins.java" target-dir="src/me/habel/IBeaconsPlugins"/>      
-     </platform>          
+        <source-file src="src/android/IBeaconsPlugins.java" target-dir="src/me/habel/IBeaconPlugin"/>
+     </platform>
 </plugin>
