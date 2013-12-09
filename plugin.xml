@@ -18,7 +18,7 @@
 
     <!-- android -->
     <platform name="android">
-        <source-file src="src/android/com/IBeacon.java" target-dir="src/me/habel/plugins/IBeacon" />
+        <source-file src="src/android/IBeacon.java" target-dir="src/me/habel/plugins/IBeacon" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="IBeacon">
                 <param name="android-package" value="me.habel.plugins.IBeacon.IBeacon" />
