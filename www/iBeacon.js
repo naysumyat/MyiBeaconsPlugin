@@ -1,14 +1,14 @@
-var iBeacon = {
+var ibeacon = {
     verifyBluetooth: function (successCallback, errorCallback) {
         cordova.exec(
             successCallback,
             errorCallback,
-            'IBeaconsPlugins',
+            'IBeacon',
             'verifyBluetooth',
             [{
-                
+
             }]
         );
     }
 }
-module.exports = iBeacon;
+module.exports = ibeacon;

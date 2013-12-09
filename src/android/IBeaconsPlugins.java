@@ -1,4 +1,4 @@
-package me.habel.iBeaconPlugin;
+package me.habel.IBeacon;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import org.apache.cordova.api.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class IBeaconsPlugins extends CordovaPlugin implements IBeaconConsumer {
+public class IBeacon extends CordovaPlugin implements IBeaconConsumer {
     private static String DEBUG_TAG = "iBeacon :: DEBUG => ";
     public static final String ACTION_VERIFY_BT = "verifyBluetooth";
     private IBeaconManager iBeaconManager = IBeaconManager

@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="iBeaconPlugin"
-    version="0.1.0">
-    <name>iBeacon</name>
-    <description>iBeacon Plugin</description>
-    <license>MIT</license>
-    <keywords>phonegap,iBeacon</keywords>
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="me.habel.cordova.plugins.ibeacon"
+    version="1.0.1">
 
-    <js-module src="www/iBeacon.js" name="iBeacon">
-        <clobbers target="window.iBeacon" />
+    <name>IBeacon</name>
+    <description>iBeacon</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/ibeacon.js" name="ibeacon">
+        <clobbers target="window.ibeacon" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+        <source-file src="src/android/com/IBeacon.java" target-dir="src/me/habel/plugins/IBeacon" />
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="IBeaconsPlugins">
-                <param name="android-package" value="me.habel.IBeaconPlugin"/>
+            <feature name="IBeacon">
+                <param name="android-package" value="me.habel.plugins.IBeacon.IBeacon" />
             </feature>
         </config-file>
-
-        <source-file src="src/android/IBeaconsPlugins.java" target-dir="src/me/habel/IBeaconPlugin"/>
-     </platform>
+    </platform>
 </plugin>
